@@ -195,10 +195,6 @@ sup {
   position: absolute;
 }
 
-.frame1 {
-  opacity: 1;
-}
-
 .frame1 #border {
   border-width: 5px;
 }

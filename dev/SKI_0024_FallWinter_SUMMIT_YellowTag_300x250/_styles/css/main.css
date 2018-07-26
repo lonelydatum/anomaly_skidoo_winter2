@@ -195,6 +195,10 @@ sup {
   position: absolute;
 }
 
+.frame1 #hero {
+  display: none;
+}
+
 .frame2 svg {
   width: 260px;
 }
