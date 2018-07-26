@@ -7,7 +7,7 @@ var _commonJsHeliumOnes = require('../../_common/js/heliumOnes');
 
 var _commonJsHeliumOnes2 = _interopRequireDefault(_commonJsHeliumOnes);
 
-TweenMax.to("#tag", 1.5, { skewX: "+=1", skewY: "+=1", rotation: "+=2", scale: .49, repeat: 6, yoyo: true, ease: Power1.easeInOut });
+TweenMax.to("#tag", 1.7, { skewX: "+=1", skewY: "+=1", rotation: "+=2", scale: .49, repeat: 3, yoyo: true, ease: Power1.easeInOut });
 (0, _commonJsHeliumOnes2["default"])();
 
 },{"../../_common/js/heliumOnes":3}],2:[function(require,module,exports){
@@ -66,7 +66,7 @@ function start() {
     (0, _common.setFrame)(".frame2");
     _common.tl.add('product', '+=.2');
     _common.tl.from('#product1', .4, { x: -300, ease: Sine.easeOut }, 'product');
-    _common.tl.from('#product2', .4, { x: -300, ease: Sine.easeOut }, 'product+=.15');
+    // tl.from('#product2', .4, {x:-300, ease:Sine.easeOut}, 'product+=.15')
 
     _common.tl.add('line', '-=.1');
     _common.tl.fromTo("#line polygon", .7, { drawSVG: "50% 50%" }, { drawSVG: "100%", ease: Sine.easeIn }, 'line');

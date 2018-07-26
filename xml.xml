@@ -10,8 +10,31 @@
 		
 		<section type='h1'>Yellow Tag backcountry EN</section>   
 		<section type='list'> 
-			<item title='300x250' url='SKI_0024_FallWinter_Backcountry_YellowTag_300x250' />			
+			<item title='300x50' url='SKI_0024_FallWinter_Backcountry_YellowTag_300x50'/>
+			<item title='300x250' url='SKI_0024_FallWinter_Backcountry_YellowTag_300x250'/>
+			<item title='300x600' url='SKI_0024_FallWinter_Backcountry_YellowTag_300x600'/>
+			<item title='320x50' url='SKI_0024_FallWinter_Backcountry_YellowTag_320x50'/>
+			<item title='728x90' url='SKI_0024_FallWinter_Backcountry_YellowTag_728x90'/>
 		</section>
+
+		<section type='h1'>Yellow Tag MXZ EN</section>   
+		<section type='list'> 
+			<item title='300x50' url='SKI_0024_FallWinter_MXZ_YellowTag_300x50'/>
+			<item title='300x250' url='SKI_0024_FallWinter_MXZ_YellowTag_300x250'/>
+			<item title='300x600' url='SKI_0024_FallWinter_MXZ_YellowTag_300x600'/>
+			<item title='320x50' url='SKI_0024_FallWinter_MXZ_YellowTag_320x50'/>
+			<item title='728x90' url='SKI_0024_FallWinter_MXZ_YellowTag_728x90'/>
+		</section>
+
+		<section type='h1'>Yellow Tag Summit EN</section>   
+		<section type='list'> 
+			<item title='300x50' url='SKI_0024_FallWinter_SUMMIT_YellowTag_300x50'/>
+			<item title='300x250' url='SKI_0024_FallWinter_SUMMIT_YellowTag_300x250'/>
+			<item title='300x600' url='SKI_0024_FallWinter_SUMMIT_YellowTag_300x600'/>
+			<item title='320x50' url='SKI_0024_FallWinter_SUMMIT_YellowTag_320x50'/>
+			<item title='728x90' url='SKI_0024_FallWinter_SUMMIT_YellowTag_728x90'/>
+		</section>
+
 
 		
 
