@@ -195,6 +195,10 @@ sup {
   position: absolute;
 }
 
+.frame1 #hero {
+  display: none;
+}
+
 #tag {
   -webkit-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
