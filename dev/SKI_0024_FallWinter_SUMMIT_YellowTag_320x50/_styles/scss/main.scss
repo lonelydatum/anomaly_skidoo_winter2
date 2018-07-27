@@ -20,6 +20,11 @@
 	svg#line{
 		@include pos(12, 12);		
 	}
+
+	#product1{
+		@include pos-scale(-5,0,.5 );
+		
+	}
 }
 
 #banner{
