@@ -7,6 +7,11 @@
 	#border{
 		border-width: 12px;
 	}
+	// opacity: 1;
+	#hero{
+		@include center();
+		// display: inline;
+	}
 }
 
 .frame2 {

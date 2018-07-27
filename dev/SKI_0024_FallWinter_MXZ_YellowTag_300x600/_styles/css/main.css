@@ -166,6 +166,17 @@ sup {
   position: absolute;
 }
 
+.product_shadow {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 .frame1 #border {
   border-width: 16px;
 }

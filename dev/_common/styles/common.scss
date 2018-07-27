@@ -107,3 +107,8 @@ sup{
 	border: 20px solid white;
 	@include pos(0,0);
 }
+
+.product_shadow{
+	@include pos(0,0);
+	
+}

@@ -7,6 +7,9 @@
 	#border{
 		border-width: 12px;
 	}
+	#hero{
+		@include center();
+	}
 }
 
 .frame2 {

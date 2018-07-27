@@ -1,14 +1,11 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var _commonJsHeliumOnes = require('../../_common/js/heliumOnes');
-
-var _commonJsHeliumOnes2 = _interopRequireDefault(_commonJsHeliumOnes);
+window.heroScale = 1;
+var start = require('../../_common/js/heliumOnes');
 
 TweenMax.to("#tag", 1.7, { skewX: "+=1", skewY: "+=1", rotation: "+=2", scale: .49, repeat: 3, yoyo: true, ease: Power1.easeInOut });
-(0, _commonJsHeliumOnes2["default"])(.03);
+start(.03);
 
 },{"../../_common/js/heliumOnes":3}],2:[function(require,module,exports){
 'use strict';
@@ -49,8 +46,9 @@ function start() {
     var scale = arguments.length <= 0 || arguments[0] === undefined ? .08 : arguments[0];
     var t2 = arguments.length <= 1 || arguments[1] === undefined ? 1.5 : arguments[1];
 
+    var heroScale = window.heroScale || 2;
     TweenLite.to("#bg", 4, { scale: "+=" + scale, ease: Sine.easeOut });
-    TweenLite.to("#hero", 4, { scale: "+=" + scale * 2, ease: Sine.easeOut });
+    TweenLite.to("#hero", 4, { scale: "+=" + scale * heroScale, ease: Sine.easeOut });
     var f1 = _common.data.f1;
 
     var f1_delay = "+=" + 1.5;
@@ -65,7 +63,12 @@ function start() {
 
     (0, _common.setFrame)(".frame2");
     _common.tl.add('product', '+=.2');
-    _common.tl.from('#product1', .4, { x: -300, ease: Sine.easeOut }, 'product');
+    if (_common.size.w === 300 && _common.size.h === 600) {
+        _common.tl.from(['.product_shadow', '#product1'], .4, { y: -90, x: -300, ease: Sine.easeOut }, 'product');
+    } else {
+        _common.tl.from('#product1', .4, { x: -300, ease: Sine.easeOut }, 'product');
+    }
+
     // tl.from('#product2', .4, {x:-300, ease:Sine.easeOut}, 'product+=.15')
 
     _common.tl.add('line', '-=.1');
