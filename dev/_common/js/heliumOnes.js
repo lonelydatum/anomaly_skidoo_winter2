@@ -1,6 +1,9 @@
 
 
 import {setFrame, tl, size, data} from './common'
+
+tl.set('#product1', {opacity:1})
+
 function start(scale=.08, t2=1.5){
     const heroScale = window.heroScale || 2
     TweenLite.to("#bg", 4, {scale:`+=${scale}`, ease:Sine.easeOut})
@@ -22,7 +25,7 @@ function start(scale=.08, t2=1.5){
     if(size.w===300 && size.h===600){
         tl.from(['.product_shadow', '#product1'], .4, {y:-90, x:-300, ease:Sine.easeOut}, 'product')
     }else{
-        tl.from('#product1', .4, {x:-300, ease:Sine.easeOut}, 'product')
+        tl.from('#product1', .6, {x:-600, ease:Sine.easeOut}, 'product')
     }
     
     

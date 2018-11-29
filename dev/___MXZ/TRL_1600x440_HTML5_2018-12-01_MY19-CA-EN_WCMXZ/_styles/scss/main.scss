@@ -1,0 +1,50 @@
+
+
+@import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/helium_jacket.scss';
+
+.frame1 {
+	#border{
+		border-width: 12px;
+	}
+	#hero{
+		@include center();
+	}
+
+
+	#t1a, #t1b{
+		@include pos-scale(17, 0, .5);
+	}
+	
+	
+
+}
+
+.frame2 {
+	// opacity: 1;
+	svg{
+		width: 1525px;
+	}
+	svg#line{
+		@include pos(37, 37);		
+	}
+	
+	
+
+	#t2a{
+		@include pos-scale(17, 0, .5);
+	}
+}
+
+#product1{
+	opacity: 0;
+	@include pos-scale(-65, 0, .5);
+}
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 1600px;
+	height: 440px;
+	// background-color: green;
+}

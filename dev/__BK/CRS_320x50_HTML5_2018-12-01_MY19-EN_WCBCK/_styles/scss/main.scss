@@ -1,0 +1,39 @@
+
+
+@import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/helium_jacket.scss';
+
+.frame1 {
+	#border{
+		border-width: 5px;
+	}
+	#hero{
+		@include center();
+	}
+	// opacity: 1;
+}
+
+.frame2 {
+	// opacity: 1;
+	svg{
+		width: 704px;
+		display: none;
+	}
+	svg#line{
+		@include pos(12, 12);		
+	}
+}
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 320px;
+	height: 50px;
+	// background-color: green;
+}
+
+
+
+#t1a, #t1b{
+	@include pos-scale(15, 0, .5);
+}

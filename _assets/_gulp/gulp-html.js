@@ -7,12 +7,7 @@ var notify          = require("gulp-notify");
 function buildTemplates(project, browserSync){
 	var splitInfo = project.split('_');
     // var name = splitInfo[0].split("/")[2];
-    console.log(project)
-    try{
-        var size = splitInfo[splitInfo.length-2].split("x");
-    }catch(e){
-        console.log(project)
-    }
+    var size = splitInfo[1].split("x");
     
     var width = size[0];
     var height = size[1];
