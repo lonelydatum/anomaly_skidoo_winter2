@@ -33,6 +33,6 @@
 
 
 #product1{
-		
+	@include pos-scale(37, 0, .5);
 	opacity: 0;
 }
